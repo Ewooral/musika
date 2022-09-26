@@ -1,4 +1,4 @@
-# Project Lyrics
+# Project Musika
 
 Develop an elegant React.js Music Application. 
 
