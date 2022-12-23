@@ -58,10 +58,10 @@ const SongCard = ({ song, isPlaying, activeSong, i, data }) => {
 export default SongCard;
 
 /**
-ns-262.awsdns-32.com.
-ns-661.awsdns-18.net.
-ns-1175.awsdns-18.org.
-ns-1543.awsdns-00.co.uk.
+ns-67.awsdns-08.com.
+ns-1902.awsdns-45.co.uk.
+ns-1026.awsdns-00.org.
+ns-854.awsdns-42.net.
 
 
 ns1.dns-parking.com
