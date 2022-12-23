@@ -1,5 +1,7 @@
 # Project Lyrics
 
+### Project Hosted on AWS: https://main.dh5t4a1z7mxz.amplifyapp.com/
+
 Develop an elegant React.js Music Application.
 
 Check out the complete project requirements [here](https://docs.google.com/document/d/13PeFwRlPEhMw_HPyrIrInvQuKaVWnpNmcv-y3NA208s/edit?usp=sharing)
