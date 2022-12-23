@@ -6,11 +6,15 @@ import { playPause, setActiveSong } from '../redux/features/playerSlice';
 
 const SongCard = ({ song, isPlaying, activeSong, i, data }) => {
 
+    const dispatch = useDispatch();
+
     const handlePauseClick = () => {
-
+        dispatch(playPause(false))
     }
-    const handlePlayClick = () => {
 
+    const handlePlayClick = () => {
+        dispatch(setActiveSong({ song, data, i }));
+        dispatch(playPause(true))
     }
 
     return (
@@ -52,3 +56,14 @@ const SongCard = ({ song, isPlaying, activeSong, i, data }) => {
 };
 
 export default SongCard;
+
+/**
+ns-262.awsdns-32.com.
+ns-661.awsdns-18.net.
+ns-1175.awsdns-18.org.
+ns-1543.awsdns-00.co.uk.
+
+
+ns1.dns-parking.com
+ns2.dns-parking.com
+ */
