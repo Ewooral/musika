@@ -8,9 +8,12 @@ import { links } from "../assets/constants";
 const Sidebar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
-        <div>
+        <>
+            <div className="md:flex hidden flex-col w-[240px] py-10 px-4">
+                Sidebar
+            </div>
 
-        </div>
+        </>
     )
 };
 
