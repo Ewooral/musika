@@ -44,6 +44,12 @@ const Sidebar = () => {
                 }
             </div>
 
+            <div className={`absolute top-0 h-screen w-2/3 bg-gradient-to-tl 
+            from-white to-[#483d8b]`} >
+                <img src={logo} alt="logo" className="w-full h-14 object-cover" />
+                <NavLinks />
+            </div>
+
         </>
     )
 };
