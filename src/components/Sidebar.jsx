@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { RiCloseLine } from "react-icons/ri";
+import { HiOutlineMenu } from "react-icons/hi"
 
 import { logo } from "../assets";
 import { links } from "../assets/constants";
@@ -37,7 +38,10 @@ const Sidebar = () => {
 
             <div className="absolute md:hidden block top-6
             right-3">
-
+                {mobileMenuOpen ? (
+                    <RiCloseLine />
+                ) : <HiOutlineMenu />
+                }
             </div>
 
         </>
