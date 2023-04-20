@@ -40,8 +40,9 @@ const TopPlay = () => {
         flex-1 xl:max-w-[500ppx] max-w-full flex flex-col">
             <div className="w-full flex flex-col">
                 <div className="flex flex-row justify-between items-center">
-                    <h2>Top Charts</h2>
-                    <Link to="top-chart"></Link>
+                    <h2 className="text-white font-bold text-2xl">Top Charts</h2>
+                    <Link to="/top-chart"></Link>
+                    <p className="text-gray-300 text-base cursor-pointer">See more</p>
                 </div>
             </div>
 
