@@ -11,7 +11,7 @@ const RelatedSongs = (
                     key={`${song.key}-${artistId}`}
 
                 />
-            )}
+            ))}
         </div>
     </div>
 );
