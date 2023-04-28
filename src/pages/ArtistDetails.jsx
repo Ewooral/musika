@@ -6,30 +6,24 @@ import { useGetArtistDetailsQuery } from "../redux/services/shazamCore";
 
 
 const ArtistDetails = () => {
-    const dispatch = useDispatch();
-    const { songid } = useParams()
+    const { id: artistId } = useParams()
     const { activeSong, isPlaying } = useSelector((state) => state.player)
 
-    const { data: songData, isFetching: isFetchingSongDetails } = useGetSongDetailsQuery({ songid })
+    const { data: artistData, isFetching: isFetchingArtistDetails, error } =
+        useGetArtistDetailsQuery({ artistId })
 
-    const { data, isFetching: isFetchingRelatedSongs, error } = useGetSongRelatedQuery({ songid })
 
-    const handlePauseClick = () => {
-        dispatch(playPause(false))
-    }
-
-    const handlePlayClick = (song, i) => {
-        dispatch(setActiveSong({ song, data, i }));
-        dispatch(playPause(true))
-    }
-
-    if (isFetchingSongDetails || isFetchingRelatedSongs) return
-    <Loader title="Searching song details" />
+    if (isFetchingArtistDetails || isFetchingRelatedSongs) return
+    <Loader title="Loading artist details" />
     if (error) return <Error />
 
     return (
         <div className="flex flex-col">
-            <DetailsHeader artistId="" songData={songData} />
+            <DetailsHeader
+                artistId={artistId}
+                artistData={artistData}
+            />
+
             <div className="mb-10">
                 <h2 className="text-white text-3xl font-bold">Lyrics:</h2>
                 <div className="mt-5">
