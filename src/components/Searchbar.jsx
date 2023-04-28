@@ -1,3 +1,5 @@
-const Searchbar = () => <div>Loader</div>;
+const Searchbar = () => (
+    <div className="text-white">Search</div>
+);
 
 export default Searchbar;
