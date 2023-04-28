@@ -25,7 +25,7 @@ const ArtistDetails = () => {
             />
 
             <RelatedSongs
-                data={data}
+                data={Object.values(artistData?.song)}
                 isPlaying={isPlaying}
                 activeSong={activeSong}
                 handlePauseClick={handlePauseClick}
