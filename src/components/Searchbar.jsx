@@ -1,6 +1,6 @@
 const Searchbar = () => (
     <div className="text-white">
-        Search
+        <label htmlFor="search">Search bar</label>
     </div>
 );
 
