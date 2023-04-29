@@ -1,7 +1,7 @@
 const Searchbar = () => (
     <div className="text-white">
         <label htmlFor="search">Search bar</label>
-        <option value="search">Search</option>
+        <input type="text" name="" id="" />
     </div>
 );
 
