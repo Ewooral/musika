@@ -1,6 +1,5 @@
 const Searchbar = () => (
     <div className="text-white">
-        <h3 className="text-white"></h3>
         <label htmlFor="search">Search bar</label>
         <input type="search" name="search" id="search" />
     </div>
